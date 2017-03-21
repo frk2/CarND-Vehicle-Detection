@@ -11,7 +11,7 @@ We learned how to train a HOG classifier, do extraction using it and create a la
 [image6]: ./output_images/allboxes.png
 [video1]: ./project_output_yuv.mp4
 
-###Training
+### Training
 
 `classify.py` is the one source of all the functions. It checks if a pickle file is on disk, if not it starts the training process using images from the cars and not cars dataset.
 
@@ -62,10 +62,7 @@ The detection of the boxes was quite janky in the begging with enough false posi
 Here's a [link to my video result](./project_output_yuv.mp4)
 
 
-###Discussion
-
-####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
-
+### Discussion
 My HOG based algorithm is good but not flawless. Even though its highly accurate in a test scenario - it still generates an alarming number of false positives. I would probably switch to a neural net for image recognition in this scenario.
 
 Some sort of motion tracking can probably make this more robust. For example we know where the cars are headed which we can use to make an educated guess of were they might end up in the next frame. 
