@@ -6,7 +6,7 @@ We learned how to train a HOG classifier, do extraction using it and create a la
 [image1]: ./output_images/car-train-yuv.png
 [image2]: ./output_images/not-car-train-yuv.png
 [image3]: ./output_images/allwindows.png
-[image4]: ./output_images/scalingwindow.jpg
+[image4]: ./output_images/scalingwindow.png
 [image5]: ./output_images/heatmap.png
 [image6]: ./output_images/allboxes.png
 [video1]: ./project_output_yuv.mp4
