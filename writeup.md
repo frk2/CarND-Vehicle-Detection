@@ -1,4 +1,4 @@
-**Vehicle Detection Project**
+# Vehicle Detection Project
 
 We learned how to train a HOG classifier, do extraction using it and create a labeled training set using heatmaps which then is able to classify objects reasonably well.
 
