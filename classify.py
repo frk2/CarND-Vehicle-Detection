@@ -254,7 +254,7 @@ def find_cars(img, ystart, ystop, svc, scale, X_scaler, cspace, orient, pix_per_
 
       if test_prediction == 1:
         bboxes.append(( (xbox_left, ytop_draw+ystart),(xbox_left+win_draw,ytop_draw+win_draw+ystart)  ))
-        cv2.rectangle(draw_img,(xbox_left, ytop_draw+ystart),(xbox_left+win_draw,ytop_draw+win_draw+ystart),(0,255,0),3)
+        # cv2.rectangle(draw_img,(xbox_left, ytop_draw+ystart),(xbox_left+win_draw,ytop_draw+win_draw+ystart),(0,255,0),3)
 
 
   # if debug:
@@ -323,12 +323,12 @@ class Processor():
     for scale,ystart in scales:
       boxes, modimg = find_cars(img, ystart, img.shape[0], self.svc, scale, self.X_scaler, self.colorspace, self.orient, self.pix_per_cell, self.cell_per_block, self.spatial_size, self.hist_bins)
       frameboxes.append(boxes)
-      plt.subplot(2,3,i)
-      plt.axis('off')
+      # plt.subplot(2,3,i)
+      # plt.axis('off')
 
-      i += 1
-      plt.imshow(modimg)
-      plt.title('Scale {}'.format(scale))
+      # i += 1
+      # # plt.imshow(modimg)
+      # plt.title('Scale {}'.format(scale))
     
     self.boxwindow.append(frameboxes)
     heat = self.generateHeatMap(img)
@@ -357,10 +357,9 @@ class Processor():
 def main():
   classify()
   processor = Processor(10)
-  processor.processImage(mpimg.imread("test_images/test1.jpg"))
   clip = VideoFileClip('project_video.mp4')
   out_clip = clip.fl_image(processor.processImage)
-  out_clip.write_videofile('project_output_yuv2.mp4',audio=False)
+  out_clip.write_videofile('project_output_yuv.mp4',audio=False)
 
 if __name__ == "__main__":
   main()
