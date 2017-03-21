@@ -59,7 +59,7 @@ The detection of the boxes was quite janky in the begging with enough false posi
 
 ### Video Implementation
 
-Here's a [link to my video result](./project_output_yuv.mp4)
+Here's a [link to my video result](./project_output_yuv.mp4) or at youtube (https://youtu.be/4Uo5KmL3hUE)
 
 
 ### Discussion
