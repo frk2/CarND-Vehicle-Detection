@@ -36,7 +36,7 @@ svc.fit(X_train, y_train)
 
 all of this was written to a pickle file so training could only be done once.
 
-###Sliding Window Search
+### Sliding Window Search
 Sliding window search was done at varying scales and from varying starting y positions. I chose the following `scale, y-start` tuples:
 ```
 scales = [(1.,360), (1.5,400), (1.8,400)]
