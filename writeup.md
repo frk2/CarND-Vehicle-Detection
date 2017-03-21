@@ -3,13 +3,13 @@
 We learned how to train a HOG classifier, do extraction using it and create a labeled training set using heatmaps which then is able to classify objects reasonably well.
 
 [//]: # (Image References)
-[image1]: ./examples/car_train-yuv.png
-[image2]: ./examples/not-car-train-yuv.png
-[image3]: ./examples/allwindows.png
-[image4]: ./examples/sliding_window.jpg
-[image5]: ./examples/heatmap.png
-[image6]: ./examples/scalingwindow.png
-[image7]: ./examples/all_boxes.png
+[image1]: ./output_images/car_train-yuv.png
+[image2]: ./output_images/not-car-train-yuv.png
+[image3]: ./output_images/allwindows.png
+[image4]: ./output_images/sliding_window.jpg
+[image5]: ./output_images/heatmap.png
+[image6]: ./output_images/scalingwindow.png
+[image7]: ./output_images/all_boxes.png
 [video1]: ./project_output_yuv.mp4
 
 ###Training
