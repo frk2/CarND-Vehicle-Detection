@@ -3,7 +3,7 @@
 We learned how to train a HOG classifier, do extraction using it and create a labeled training set using heatmaps which then is able to classify objects reasonably well.
 
 [//]: # (Image References)
-[image1]: ./output_images/car_train-yuv.png
+[image1]: ./output_images/car-train-yuv.png
 [image2]: ./output_images/not-car-train-yuv.png
 [image3]: ./output_images/allwindows.png
 [image4]: ./output_images/sliding_window.jpg
